@@ -12,6 +12,29 @@
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<style>
+			.preview-container {
+			  display: flex;
+			  justify-content: center; 
+			  align-items: center;
+			  height: 300px;
+			  border: 1px solid #ddd;
+			  cursor: pointer;
+			}
+		
+			.preview-container:hover::after {
+			  content: "Certificaciones";
+			  position: absolute;
+			  top: 50%;
+			  left: 50%;  
+			  transform: translate(-50%, -50%);
+			  background: rgba(0,0,0,0.8);
+			  color: #fff;
+			  padding: 10px;
+			}
+		 </style>
+
 	</head>
 	<body class="is-preload">
 
@@ -111,55 +134,30 @@
 										<h3>Clasificación supervisada</h3>
 
 										<p>
-											Este proyecto implicó la clasificación supervisada de imágenes satelitales para generar información precisa y detallada sobre diversos objetos en el área conurbada de Guadalajara, Jalisco. Este análisis permitió identificar elementos como casas, bosques, agua, entre otros, de manera rápida y económica. La clasificación supervisada implica la categorización automática de píxeles en clases temáticas, lo que luego se utilizó para generar mapas temáticos y a partir de estos tomar decisiones respecto al manejo de ecosistemas, las áreas urbanas, etc. 
+											Este proyecto implicó la clasificación supervisada de imágenes satelitales para generar información precisa y detallada sobre diversos objetos en el área conurbada de Guadalajara, Jalisco. Este análisis permitió identificar elementos como casas, bosques, agua, entre otros, de manera rápida y económica. La clasificación supervisada implica la categorización automática de píxeles en clases temáticas, lo que luego se utilizó para generar mapas temáticos y a partir de estos tomar decisiones respecto al manejo de ecosistemas, las áreas urbanas, etc. Para una revisión a detalle se puede consultar el enlace debajo de la imagen. 
 										</p>
 									</header>
 									<div class="content">
 										<div class="gallery">
 											<a href="images/csu.png" class="landscape"><img src="images/csu.png" alt="ss_Mapa web" /></a>
+											<figcaption><a href="https://github.com/EGLl-99/Sup_Class/blob/main/ClasSup.ipynb">Clasificación de tipos de suelos con datos satelitales</a></figcaption>
 										</div>
 									</div>
 								</section>
+							<!-- Section-->
+							<section>
+								<header>
+									<h3>Certificados</h3>
+									<p>A lo largo de mi trayectoria me he capacitado en el área del análisis de datos, pues mas allá de ser un requisito en mi área profesional es mi más grande pasión. Se puede consultar un poco de mi trayectoria en esta sección. </p>
+								</header>
 
-								<style>
-									.button-container {
-									  display: flex;
-									  flex-direction: column;
-									  align-items: center;
-									}
-									
-									.button-container button {
-									  margin-bottom: 10px;
-									}
-								</style>
-								
+							</section>	
 
-								<div class="button-container">
-									<button onclick="togglePDF('Certificados/DataScience_EGll.pdf')"> DS C</button>
-									<button onclick="togglePDF('pdf2.pdf')">Botón 2</button>
-									<button onclick="togglePDF('pdf3.pdf')">Botón 3</button>
-									<button onclick="togglePDF('pdf4.pdf')">Botón 4</button>
-								  </div>
-								  
-								  <div id="pdf-container" class="pdf-container">
-									<button class="close-button" onclick="togglePDF()">Cerrar</button>
-									<iframe id="pdf-iframe" src=""></iframe>
-								  </div>
-								  
-								  <script>
-								  function togglePDF(pdf) {
-									var pdfContainer = document.getElementById("pdf-container");
-									var pdfIframe = document.getElementById("pdf-iframe");
-									
-									if (pdfContainer.style.display === "none") {
-									  pdfContainer.style.display = "block";
-									  pdfIframe.src = pdf;
-									} else {
-									  pdfContainer.style.display = "none";
-									  pdfIframe.src = "";
-									}
-								  }
-								</script>	
+							<div class="preview-container" onclick="window.location.href='visor_pdf.html'">
+								<iframe src="visor_pdf.html" width="400" height="300"></iframe> 
+							</div>		
+
+							
 
 				<!-- Section -->
 					<section>
@@ -192,7 +190,7 @@
 									<a >egonzalezllamas@gmail.com</a>
 								</li>
 								<li>
-									<h3>Phone</h3>
+									<h3>Telefono</h3>
 									<a >(+52) 5538849384</a>
 								</li>
 								<li>
